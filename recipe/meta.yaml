@@ -1,4 +1,4 @@
-{% set version = '1.1.0' %}
+{% set version = "1.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/SantanderMetGroup/fireDanger/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7b9070d5ea02eab16fd16fb84fd436ecfe5d8760f1c566727b216fadc26a2a3a
+  sha256: 32f294b74221554c351b528b2edd941e9a3f60c6d2d303bac0e0a27279d3fb57
 
 build:
-  number: 4
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -52,7 +52,7 @@ extra:
   recipe-maintainers:
     - conda-forge/r
     - cofinoa
-    
+
 
 # Package: fireDanger
 # Depends: R(>= 3.1.0)
